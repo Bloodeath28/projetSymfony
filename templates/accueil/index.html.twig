@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Css/Style.css')}}">
+{% endblock %}
+
+
+
+
+{% block main %}
+<main>
+    <section id="pageAccueil">
+        <article>
+            <article id="presentationSite">
+                <h1 id="titrePrincipal" class="titreDeBlock">MARVEL BOOK</h1>
+                <div id="imageTexte">
+                    <img id="imgPresentation" src="{{ asset('Asset/Img/Books-Marvel.webp')}}" alt="">
+                    <div id="lesTexte">
+                        <h2 id="sousTitrePresentation">Présentation du site</h2>
+                        <p id="textePresentation">Lorem ipsum dolor sit amet consectetur. Odio elementum vestibulum sit rhoncus integer pellentesque. 
+                            Mattis gravida nunc metus hendrerit et aenean. Diam convallis praesent eget et risus a nulla augue arcu. 
+                            Quam tristique cras nunc cras turpis sollicitudin amet mauris. Ornare ultrices sed mattis sed sagittis enim. 
+                            Eros quam bibendum viverra enim. Vitae diam massa sed id sagittis ultrices mauris vitae purus. Massa eget integer eu et ut. 
+                            Pulvinar facilisis amet quam fames nunc sed cras.</p>
+                    </div>
+                </div>
+            </article>
+            <article id="blockMieuxNote">
+                <h1 class="titreDeBlock">Titre des livres les mieux notés</h1>
+                <div id="blockLivresMieuxNote">
+                    <div class="blockLivre">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Book-MARVEL.webp')}}" alt="livre Marvel Book">
+                        <p>Note</p>
+                    </div>
+                    <div class="blockLivre">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Ant-man-book.webp')}}" alt="Livre Ant-man">
+                        <p>Note</p>
+                    </div>
+                    <div class="blockLivre">
+                        <img class="imageLivre" src="{{asset('Asset/Img/black-panther-tome-1-des-ombres-au-tableau.webp')}}" alt="Livre black Panther tome 1">
+                        <p>Note</p>
+                    </div>
+                    <div class="blockLivre">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Spider-man encyclopedie.jpg')}}" alt="Livre Spider-man encyclopedia">
+                        <p>Note</p>
+                    </div>
+                    <div class="blockLivre">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Hulk book.jpg')}}" alt="Livre Hulk book">
+                        <p>Note</p>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <img id="marvelHero" src="{{asset('Asset/Img/Marvel-Hero.png')}}" alt="les heros de Marvel">
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Css/connexion.css')}}">
+{% endblock %}
+
+{% block main %}
+<main>
+    <section id="pageConnexion">
+        <article>
+            <img class="imageMarvel" src="../Asset/Img/Hulk.png" alt="Thor">
+        </article>
+        <img id="antMan"  src="../Asset/Img/Ant-man.png" alt="Captain Marvel">
+        <article id="blockConnexion">
+            <h1 id="titreConnexion">connexion</h1>
+            <form method="post" action="../../../src/App/Controller/connexionBd.php">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="label" for="pseudo">Pseudo</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="pseudo" type="text" name="pseudo" placeholder=" Saisisez votre Pseudo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="motDePasse">Mot de passe :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="motDePasse" type="password" name="motDePasse" placeholder=" Saisisez votre Mot de passe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="checkBox">
+                            <input type="checkbox" name="checkbox">
+                            <label for="chekbox">Restez connecté</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="boxBtnConnexion">
+                            <input id="btnConnect" type="submit" name="password" value="Connexion">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+        <article>
+            <img class="imageMarvel" src="Asset/Img/Ant-man.webp" alt="Ant-Man">
+        </article>
+    </section>
+</main>
+{% endblock %}

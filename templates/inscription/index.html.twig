@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Css/Inscription.css')}}">
+{% endblock %}
+
+{% block main %}
+<main>  
+    <section id="pageInscription">
+        <article>
+            <img class="imageMarvel" src="../Asset/Img/Thor.png" alt="Thor">
+        </article>
+        <img id="captainMarvel"  src="Asset/Img/Captain-Marvel.png" alt="Captain Marvel">
+        <article id="blockInscription">
+            <h1 id="titreInscription">Inscription</h1>
+            <form method="post" action="../../../src/App/Controller/insertion.php">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="label" for="pseudo">Pseudo :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="pseudo" type="text" name="pseudo"  placeholder=" Saisisez votre Pseudo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label"  for="email">E-mail :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="eMail" type="email" name="email"  placeholder=" Saisisez votre E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="motDePasse">Mot de passe :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="motDePasse" type="password" name="motDePasse"  placeholder=" 8 Caractère mini, 1 Maj, 1 Caractère special et 1 chiffre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="validationDeMotDePasse">Validation du mot de passe :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="validationDeMotDePasse" type="password" name="password"  placeholder=" Resaisisez votre Mot de passe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="genre">Genre :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="genre">
+                            <input class="champSelection" type="radio" name="genre" value="Homme"> Homme :
+                            <input class="champSelection" type="radio" name="genre" value="Femme"> Femme :
+                            <input class="champSelection" type="radio" name="genre" value="Autre"> Autre :
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="date">Date de naissance :</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="champRemplissage" id="date" type="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="boxCheckBox">
+                            <input type="checkbox" id="checkBox" name="checkbox" >
+                            <label for="chekbox">J'accepte les, <a href="#">CGU</a></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="boxBtnInscription">
+                            <input id="btnInscrire" type="submit" value="S'inscrire">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+        <article>
+            <img class="imageMarvel" src="Asset/Img/Captain-Marvel.png" alt="Captain Marvel">
+        </article>
+    </section>
+</main>
+{% endblock %}

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} Marvel Book | {{ titre }} {% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('Css/Global.css')}}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('Asset/Logo/Logo-Spider-man.webp') }}">
         {% block stylesheets %}
         {% endblock %}
 
@@ -11,6 +14,43 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+            <header>
+                <nav>
+                    <section id="navGauche">
+                        <div>
+                            <a href="{{ path('app_accueil')}}"><img id="logoMarvelBook" src="{{ asset('Asset/Logo/Marvel-Book-logo.webp')}}" alt="Logo MARVEL Book"></a>
+                        </div>
+                        <div>
+                            <a class="btn" href="/Static/Views/leslivres.html">Les livres</a>
+                        </div> 
+                    </section>
+                    <section id="navDroite">
+                        <div id="utilisateurNonConnecter">
+                            <a class="btn" id="btnConnexion" href="{{ path('app_connexion')}}">Connexion</a>
+                            <a class="btn" id="btnInscription" href="{{ path('app_inscription')}}">Inscription</a>
+                        </div>
+                        <div id="utilisateurConnecter">
+                            <a class="btn" id="btnProfil" href="/Static/Views/profile.html">Profil</a>
+                            <a class="btn" id="btnDeconnexion" href="/Index.html">Deconnexion</a>
+                        </div>
+                    </section>
+                </nav>
+            </header>
+        {% block main %}
+        
+        {% endblock %}
+        <footer>
+            <section id="footerMarvel">
+                <article id="footerGauche">
+                    <img class="imgFooter" src="{{asset('Asset/Img/iron-man-team-vg-marvel-culture-geek-vonguru-min-500x500.png')}}" alt="Iron-Man">
+                    <div>
+                        <p id="texteFooter">Ceci est une page de présentation pour un projet de formation</p>
+                    </div>
+                </article>
+                <article id="footerDroite">
+                    <img class="imgFooter" src="{{ asset('Asset/Img/wolverine-comics.png')}}" alt="Wolverine">
+                </article>
+            </section>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Marvel';
+    src: url(../Font/Marvel-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#antMan {
+    display: none;
+}
+
+#pageConnexion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Marvel', sans-serif;
+}
+
+.imageMarvel {
+    margin: 50px;
+    width: 30vw;
+}
+
+#blockConnexion{
+    margin: 30px 0;
+    border-radius: 20px;
+    background-color: #59595950;
+    width: 30vw;
+    z-index: 2;
+}
+
+#titreConnexion{
+    margin: 40px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    color: #e01c1cce;
+    width: 300px;
+}
+
+table {
+    margin: 100px auto;
+    width: 350px;
+    height: 450px;
+}
+
+.champRemplissage {
+    border-radius: 10px;
+    border: dotted 2px #e01c1cce;
+    width: 350px;
+    height: 30px;
+}
+
+#checkBox, #boxBtnConnexion {
+    text-align: center;
+}
+
+#btnConnect {
+    border: none;
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'marvel', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    background-color: #5E5BFF;
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    cursor: pointer;
+}
+
+#btnConnect:hover {
+    background-color: #5e5bff98;
+}
+
+#btnConnect:active {
+    background-color: #e01c1c79;
+}
+
+@media (width < 1250px) {
+
+    .imageMarvel {
+        display: none;
+    }
+
+    #antMan {
+        display: flex;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 340px;
+        margin: 0 25vw;
+    }
+
+    #blockConnexion {
+        width: 340px;
+    }
+
+    .champRemplissage {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    @media (width < 450px) {
+        #antMan {
+            margin: 100px 20px;
+        }
+        
+        .btn{
+            font-size: 8px;
+            width: 50px;
+            height: 30px;
+        }
+    }
+}

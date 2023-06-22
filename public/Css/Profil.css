@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Marvel';
+    src: url(../Font/Marvel-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Marvel', sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+#blocDeProfil {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: #e01c1cce;
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+}
+
+#cadrePerso {
+    display: flex;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+    background-color: #b8b6b6;
+}
+
+#photoProfil{
+    margin: 10px 10px 5px;
+    width: 200px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+#btnChangerPhoto{
+    border: none;
+    background-color: #5E5BFF;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
+#btnChangerPhoto:hover, #enregitrerCadrePerso:hover{
+    background-color: #5e5bff98;
+}
+
+#btnChangerPhoto:active, #enregitrerCadrePerso:active{
+    background-color: #e01c1c79;
+}
+
+#pseudoGenreDate{
+    margin: auto 0;
+}
+
+#pseudo{
+    font-size: 16px;
+    font-family: 'Marvel', sans-serif;
+    height: 25px;
+    border-radius: 5px;
+    border: dotted 2px #e01c1cce;
+}
+
+#date, #genre{
+    font-size: 16px;
+    font-family: 'Marvel', sans-serif;
+    width: 175px;
+    height: 25px;
+}
+
+#enregitrerCadrePerso{
+    border: none;
+    font-family: 'Marvel', sans-serif;
+    margin: 25px 40px;
+    width: 100px;
+    height: 25px;
+    background-color: #5E5BFF;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    border-radius: 10px;
+}
+
+#cadreDeDescription{
+    background-color: #b8b6b6;
+    width: 550px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+#tableauDescription{
+    margin: 15px auto;
+    width: 500px;
+}
+
+.champRemplissage{
+    width: 275px;
+    height: 25px;
+    border-radius: 10px;
+    border: dotted 2px #e01c1cce;
+}
+
+#champDeDescription{
+    width: 450px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Marvel', sans-serif;
+    border: dotted 2px #e01c1cce;
+    resize: none;
+}
+
+#enregitrerDescription{
+    border: none;
+    margin: 10px 220px;
+    width: 100px;
+    height: 25px;
+    background-color: #5E5BFF;
+    color: white;
+    font-size: 16px;
+    font-family: 'Marvel', sans-serif;
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    border-radius: 10px;
+}
+
+#marvelUniverse{
+    width: 68vw;
+}
+
+/* fin du main et debut du footer*/
+
+#footerMarvel {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-between;
+    background-color: #59595950;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+}
+
+#footerGauche  {
+    display: flex;
+}
+
+.imgFooter {
+    height: 80px;
+    margin-right: 10px;
+}
+
+#texteFooter {
+    margin: 30px;
+    font-family: 'Marvel', sans-serif;
+}
+
+@media (width < 1250px) {
+
+    .btn{
+        font-size: 8px;
+        width: 50px;
+        height: 30px;
+    }
+
+    #marvelUniverse{
+        display: none;
+    }
+
+    #blocDeProfil {
+        margin: 30px auto;
+        width: 360px;
+    }
+
+    #cadrePerso {
+        width: 340px;
+    }
+
+    #photoProfil {
+        width: 125px;
+    }
+
+    #btnChangerPhoto {
+        margin-left: 20px;
+    }
+
+    #pseudo {
+        width: 150px;
+    }
+
+    #cadreDeDescription {
+        width: 340px;
+    }
+
+    #champDeDescription{
+        width: 300px;
+    }
+
+    #tableauDescription{
+        margin: 15px;
+        width: 300px;
+    }
+
+    #enregitrerDescription {
+        margin: 10px 125px;
+    }
+
+    #texteFooter {
+        font-size: 8px;
+    }
+
+}
