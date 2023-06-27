@@ -14,28 +14,28 @@
         {% endblock %}
     </head>
     <body>
-            <header>
-                <nav>
-                    <section id="navGauche">
-                        <div>
-                            <a href="{{ path('app_accueil')}}"><img id="logoMarvelBook" src="{{ asset('Asset/Logo/Marvel-Book-logo.webp')}}" alt="Logo MARVEL Book"></a>
-                        </div>
-                        <div>
-                            <a class="btn" href="/Static/Views/leslivres.html">Les livres</a>
-                        </div> 
-                    </section>
-                    <section id="navDroite">
-                        <div id="utilisateurNonConnecter">
-                            <a class="btn" id="btnConnexion" href="{{ path('app_connexion')}}">Connexion</a>
-                            <a class="btn" id="btnInscription" href="{{ path('app_inscription')}}">Inscription</a>
-                        </div>
-                        <div id="utilisateurConnecter">
-                            <a class="btn" id="btnProfil" href="/Static/Views/profile.html">Profil</a>
-                            <a class="btn" id="btnDeconnexion" href="/Index.html">Deconnexion</a>
-                        </div>
-                    </section>
-                </nav>
-            </header>
+        <header>
+            <nav>
+                <section id="navGauche">
+                    <div>
+                        <a href="{{ path('app_accueil')}}"><img id="logoMarvelBook" src="{{ asset('Asset/Logo/Marvel-Book-logo.webp')}}" alt="Logo MARVEL Book"></a>
+                    </div>
+                    <div>
+                        <a class="btn" href="{{ path('app_livre')}}">Les livres</a>
+                    </div> 
+                </section>
+                <section id="navDroite">
+                    <div id="utilisateurNonConnecter">
+                        <a class="btn" id="btnConnexion" href="{{ path('app_connexion')}}">Connexion</a>
+                        <a class="btn" id="btnInscription" href="{{ path('app_inscription')}}">Inscription</a>
+                    </div>
+                    <div id="utilisateurConnecter">
+                        <a class="btn" id="btnProfil" href="/Static/Views/profile.html">Profil</a>
+                        <a class="btn" id="btnDeconnexion" href="/Index.html">Deconnexion</a>
+                    </div>
+                </section>
+            </nav>
+        </header>
         {% block main %}
         
         {% endblock %}

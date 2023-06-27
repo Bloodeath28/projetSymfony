@@ -8,78 +8,62 @@ body {
     padding: 0;
 }
 
-/*barre de navigation*/
-nav {
+.ligne, .blockPresentation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    height: 60px;
-    background-color: #59595950;
+}
+
+.ligne {
+    margin: 20px 0;
+}
+
+.blockPresentation{
+    width: 596px;
+    height: 327px;
+    margin: 0 20px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
     align-items: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.couverture {
+    width: 196px;
+    height: 243px;
+    
+}
+.blockVote, .couverture {
+    margin-left: 40px;
 }
 
-#navGauche {
-    display: flex;
-    align-items: center;
+.vote {
+    width: 33px;
 }
 
-#logoMarvelBook {
-    height: 60px;
-    opacity: 65%;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    height: 30px;
-    margin: 0 2vw;
-    background-color: #e01c1cce;
+.titreBook {
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(49, 47, 47);
-    text-transform: uppercase;
-    font-family: 'Marvel', sans-serif;
+    width: 251px;
+    height: 38px;
+    margin-right: 40px;
+    background-color: #F0F0F0;
+    text-align: center;
+    color: #D94343;
+    
 }
 
-.btn:hover {
-    background-color: #e01c1c79;
-}
-
-.btn:active {
-    background-color: #391ce079;
-}
-
-/* Fin de la nav barre de du main */
-
-/* fin du main et debut du footer*/
-
-#footerMarvel {
-    display: flex;
-    flex-direction: row;
-    height: 80px;
-    justify-content: space-between;
-    background-color: #59595950;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.texteBook {
+    width: 251px;
+    height: 178px;
+    border-radius: 10px;
     align-items: center;
+    background-color: #F0F0F0;
 }
 
-#footerGauche  {
-    display: flex;
-}
-
-.imgFooter {
-    height: 80px;
-    margin-right: 10px;
-}
-
-#texteFooter {
-    margin: 30px;
-    font-family: 'Marvel', sans-serif;
+.BtnEnvoyer {
+    width: 69px;
+    height: 21px;
+    margin-top: 10px;
+    background-color: #5E5BFF;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
 }

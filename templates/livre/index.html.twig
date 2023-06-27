@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('Css/livres.css')}}">
+{% endblock %}
+
+{% block main %}
+<main>
+    <section class="ligne">
+        <article class="blockPresentation">
+            <div id="blockCouverture">
+                <img class="couverture" src="{{ asset('Asset/Img/Book-MARVEL.webp')}}" alt="Premiere page de Book">
+                <div class="blockVote">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileJaune.webp')}}" alt="Note etoile jaune" value="1">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="2">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="3">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="4">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="5">
+                </div>
+            </div>
+            <div>
+                <div class="titreBook">
+                    <h3 >Titre H3 du Book</h3>
+                </div>
+                <div class="texteBook">
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                     Vestibulum et erat nunc molestie diam. 
+                     Porttitor velit etiam duis dolor scelerisque vel at. 
+                     Et suspendisse tristique quis orci euismod et enim. 
+                     Volutpat cum in vitae felis nibh pellentesque vitae.</p>
+                </div>
+                <input class="BtnEnvoyer" type="submit" value="Voter">
+            </div>
+        </article>
+        <article class="blockPresentation">
+            <div id="blockCouverture">
+                <img class="couverture" src="{{ asset('Asset/Img/Ant-man-book.webp')}}" alt="Premiere page de Book">
+                <div class="blockVote">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileJaune.webp')}}" alt="Note etoile jaune" value="1">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="2">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="3">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="4">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="5">
+                </div>
+            </div>
+            <div>
+                <div class="titreBook">
+                    <h3 >Titre H3 du Book</h3>
+                </div>
+                <div class="texteBook">
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                     Vestibulum et erat nunc molestie diam. 
+                     Porttitor velit etiam duis dolor scelerisque vel at. 
+                     Et suspendisse tristique quis orci euismod et enim. 
+                     Volutpat cum in vitae felis nibh pellentesque vitae.</p>
+                </div>
+                <input class="BtnEnvoyer" type="submit" value="Voter">
+            </div>
+        </article>
+        <article class="blockPresentation">
+            <div id="blockCouverture">
+                <img class="couverture" src="{{ asset('Asset/Img/black-panther-tome-1-des-ombres-au-tableau.webp')}}" alt="Premiere page de Book">
+                <div class="blockVote">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileJaune.webp')}}" alt="Note etoile jaune" value="1">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="2">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="3">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="4">
+                    <input class="vote" type="image" src="{{ asset('Asset/Logo/etoileGris.webp')}}" alt="Note etoile jaune" value="5">
+                </div>
+            </div>
+            <div>
+                <div class="titreBook">
+                    <h3 >Titre H3 du Book</h3>
+                </div>
+                <div class="texteBook">
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                     Vestibulum et erat nunc molestie diam. 
+                     Porttitor velit etiam duis dolor scelerisque vel at. 
+                     Et suspendisse tristique quis orci euismod et enim. 
+                     Volutpat cum in vitae felis nibh pellentesque vitae.</p>
+                </div>
+                <input class="BtnEnvoyer" type="submit" value="Voter">
+            </div>
+        </article>
+    </section>
+</main>
+{% endblock %}
