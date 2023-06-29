@@ -12,35 +12,37 @@ class LivreController extends AbstractController
 {
     #[Route('/livre', name: 'app_livre')]
     public function index(): Response
-{
-    // Créer une instance de Client
-    $client = new Client();
+    {
+        $publicKey = $_ENV['APP_SECRET_API_KEY_PUBLIC'];
+        $privateKey = $_ENV['APP_SECRET_API_KEY_PRIVATE'];
+        $ts = time();
+        $hash = md5($ts . $privateKey . $publicKey);
 
-    try {
-        // Effectuer une requête GET à l'API
-        $response = $client->request('GET', 'https://api.example.com/livres');
+        $client = new Client();
 
-        // Obtenir le corps de la réponse
-        $data = $response->getBody()->getContents();
+        try {
+            $response = $client->request('GET', 'http://gateway.marvel.com/v1/public/comics', [
+                'query' => [
+                    'ts' => $ts,
+                    'apikey' => $publicKey,
+                    'hash' => $hash,
+                ],
+            ]);
 
-        // Traitement des données de la réponse de l'API
-        // ...
+            $statusCode = $response->getStatusCode();
+            $content = $response->getBody()->getContents();
+            // Faites quelque chose avec la réponse JSON de l'API Marvel
 
-        return $this->render('livre/index.html.twig', [
-            'controller_name' => 'LivreController',
-            'titre' => 'Livres',
-            'api_data' => $data, // Passer les données de l'API au template
-        ]);
-    } catch (\Exception $e) {
-        // Gérer les erreurs de connexion à l'API
-        // ...
-
-        // Retourner une réponse d'erreur
-        return new Response('Une erreur s\'est produite lors de la connexion à l\'API.');
+            return $this->render('livre/index.html.twig', [
+                'controller_name' => 'LivreController',
+                'titre' => 'Livre',
+                'content' => $content, // Transmettez le contenu de la réponse à votre template
+            ]);
+        } catch (\Exception $e) {
+            // Gérez les erreurs de requête
+            // Affichez ou loggez l'erreur selon vos besoins
+            return new Response('Une erreur s\'est produite lors de la requête à l\'API Marvel.');
+        }
     }
 }
-
-
-    
-
-}
+   

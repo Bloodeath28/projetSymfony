@@ -7,10 +7,14 @@
         <title>{% block title %} Marvel Book | {{ titre }} {% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('Css/Global.css')}}">
         <link rel="icon" type="image/x-icon" href="{{ asset('Asset/Logo/Logo-Spider-man.webp') }}">
+        {% block stylesheetsCSS %}
+        {% endblock %}
         {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
         {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>

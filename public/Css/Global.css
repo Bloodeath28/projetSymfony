@@ -8,51 +8,6 @@ body {
     padding: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    background-color: #59595950;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-#navGauche {
-    display: flex;
-    align-items: center;
-}
-
-#logoMarvelBook {
-    height: 60px;
-    opacity: 65%;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    height: 30px;
-    margin: 0 2vw;
-    background-color: #e01c1cce;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(49, 47, 47);
-    text-transform: uppercase;
-    font-family: 'Marvel', sans-serif;
-}
-
-.btn:hover {
-    background-color: #e01c1c79;
-}
-
-.btn:active {
-    background-color: #391ce079;
-}
 
 #utilisateurConnecter {
     display: none;

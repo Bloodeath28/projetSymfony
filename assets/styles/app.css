@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav{
+    @apply h-[60px] bg-[#59595950] flex justify-between items-center;
+}
+.btn{
+    @apply inline-flex justify-center items-center w-[125px] h-[30px];
+    @apply my-0 mx-[2vw] bg-[#e01c1cce] rounded-[10px];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    @apply uppercase;
+    font-family: 'Marvel', sans-serif;
+    @apply hover:bg-[#e01c1c79] active:bg-[#391ce079];
+}
+
+nav a {
+    @apply text-white no-underline;
+}
+
+#navGauche {
+    @apply flex items-center
+}
+
+#logoMarvelBook {
+    @apply h-[60px] opacity-60;
+}
+
+#utilisateurConnecter {
+    @apply hidden;
+}
