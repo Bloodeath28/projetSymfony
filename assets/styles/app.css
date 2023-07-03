@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply m-0 p-0;
+}
 
 nav{
     @apply h-[60px] bg-[#59595950] flex justify-between items-center;
@@ -10,8 +13,7 @@ nav{
     @apply inline-flex justify-center items-center w-[125px] h-[30px];
     @apply my-0 mx-[2vw] bg-[#e01c1cce] rounded-[10px];
     box-shadow: 5px 5px 10px rgb(49, 47, 47);
-    @apply uppercase;
-    font-family: 'Marvel', sans-serif;
+    @apply uppercase font-bold;
     @apply hover:bg-[#e01c1c79] active:bg-[#391ce079];
 }
 
@@ -29,4 +31,30 @@ nav a {
 
 #utilisateurConnecter {
     @apply hidden;
+}
+
+#footerMarvel {
+    @apply flex flex-row h-[80px] justify-between bg-[#59595950];
+    @apply rounded-t-lg items-center;
+}
+
+#footerGauche, #pageAccueil {
+    @apply flex;
+}
+
+.imgFooter {
+    @apply h-[80px] mr-5;
+}
+
+#texteFooter {
+    @apply my-[30px];
+}
+
+#presentationSite, #blockMieuxNote {
+    @apply m-[30px] p-[20px] w-[49vw] rounded-[20px];
+    @apply bg-[#59595950] text-center
+}
+
+#titrePrincipal {
+    @apply text-[30px] font-bold;
 }

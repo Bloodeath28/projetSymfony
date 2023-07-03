@@ -1,27 +1,3 @@
-@font-face {
-    font-family: 'Marvel';
-    src: url(../Font/Marvel-Regular.ttf);
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-#pageAccueil {
-    display: flex;
-}
-
-#presentationSite, #blockMieuxNote {
-    margin: 30px 30px;
-    padding: 20px;
-    width: 49vw;
-    border-radius: 20px;
-    background-color: #59595950;
-    text-align: center;
-    font-family: 'Marvel', sans-serif;
-}
 
 #titrePrincipal {
     font-size: 30px;

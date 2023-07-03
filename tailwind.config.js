@@ -5,8 +5,11 @@ module.exports = {
     "./templates/**/*.html.twig",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Marvel: ['"Marvel-Regular"', 'sans-serif'],
+    },
   },
   plugins: [],
 }
-
+}
