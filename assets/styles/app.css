@@ -56,5 +56,89 @@ nav a {
 }
 
 #titrePrincipal {
-    @apply text-[30px] font-bold;
+    @apply text-[30px] font-extrabold;
+}
+
+.titreDeBlock {
+    @apply text-[#e01c1cce] bg-[#E6E6E6] w-[20vw];
+    @apply py-[5px] px-[20px] mx-auto mb-[20px] rounded-[15px];
+}
+
+#imageTexte{
+    @apply flex flex-row;
+}
+
+#imgPresentation {
+    @apply mr-[20px] w-[25vw] rounded-[10px];
+}
+
+#sousTitrePresentation {
+    @apply bg-[#E6E6E6] w-[15vw] py-[5px] px-[20px];
+    @apply mt-[10px] mx-auto mb-[30px] rounded-[15px] font-bold;
+}
+
+#textePresentation {
+    @apply bg-[#E6E6E6] w-[20vw] h-[20vw] py-[5px] px-[20px];
+    @apply mx-auto mb-[20px] rounded-[15px] text-justify;
+}
+
+#titreLivreNote {
+    @apply font-extrabold;
+}
+
+#blockLivresMieuxNote {
+    @apply flex flex-row justify-between;
+}
+
+.blockLivre {
+    @apply pt-[15px] px-[15px] bg-[#E6E6E6] rounded-[10px];
+}
+
+.imageLivre {
+    @apply w-[6.5vw] h-[9vw];
+}
+
+#marvelHero {
+    @apply w-[45vw];
+}
+
+#captainMarvel {
+    @apply hidden;
+}
+
+#pageInscription {
+    @apply flex flex-row justify-between;
+}
+
+.imageMarvel {
+    @apply m-[50px] w-[30vw];
+}
+
+#blockInscription {
+    @apply my-[30px] rounded-[20px] bg-[#59595950] w-[30vw] z-10;
+}
+
+#titreInscription {
+    @apply my-[40px] mx-auto py-[10px] text-center bg-[#E6E6E6];
+    @apply  rounded-[10px] text-[#e01c1cce] w-[300px] font-extrabold;
+}
+
+table {
+    @apply my-[100px] mx-auto h-[450px];
+}
+
+.champRemplissage {
+    @apply rounded-[10px] border-2 border-dotted border-[#e01c1cce];
+    @apply my-[10px] w-[350px] h-[30px];
+}
+
+#boxCheckBox, #boxBtnInscription {
+    @apply text-center;
+}
+
+#btnInscrire {
+    @apply border-none m-[10px] w-[150px] h-[40px] rounded-[20px] uppercase font-[20px] text-white bg-[#5E5BFF];
+    @apply  font-[20px] text-white bg-[#5E5BFF];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    @apply pointer-events-auto font-extrabold hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
 }
