@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheetsCSS %}
-<link rel="stylesheet" href="{{ asset('Css/Inscription.css')}}">
+    <link rel="stylesheet" href="{{ asset('build/font.css') }}">
 {% endblock %}
 
 {% block main %}
@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <td id="boxBtnInscription">
-                            <input id="btnInscrire" type="submit" value="S'inscrire">
+                            <input id="btnInscrire" class="marvel-font" type="submit" value="S'inscrire">
                         </td>
                     </tr>
                 </table>

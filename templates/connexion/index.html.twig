@@ -1,20 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheetsCSS %}
-<link rel="stylesheet" href="{{ asset('Css/connexion.css')}}">
+<link rel="stylesheet" href="{{ asset('build/font.css') }}">
 {% endblock %}
 
 {% block main %}
 <main>
     <section id="pageConnexion">
         <article>
-            <img class="imageMarvel" src="../Asset/Img/Hulk.png" alt="Thor">
+            <img class="imageMarvel" src="{{asset('Asset/Img/Hulk.webp')}}" alt="Hulk">
         </article>
-        <img id="antMan"  src="../Asset/Img/Ant-man.png" alt="Captain Marvel">
+        <img id="antMan"  src="{{asset('Asset/Img/Ant-man.webp')}}" alt="Captain Marvel">
         <article id="blockConnexion">
             <h1 id="titreConnexion">connexion</h1>
             <form method="post" action="../../../src/App/Controller/connexionBd.php">
-                <table>
+                <table id=tableConnexion>
                     <tr>
                         <td>
                             <label class="label" for="pseudo">Pseudo</label>
@@ -43,14 +43,14 @@
                     </tr>
                     <tr>
                         <td id="boxBtnConnexion">
-                            <input id="btnConnect" type="submit" name="password" value="Connexion">
+                            <input  id="btnConnect" class="marvel-font" type="submit" name="password" value="Connexion">
                         </td>
                     </tr>
                 </table>
             </form>
         </article>
         <article>
-            <img class="imageMarvel" src="Asset/Img/Ant-man.webp" alt="Ant-Man">
+            <img class="imageMarvel" src="{{asset('Asset/Img/Ant-man.webp')}}" alt="Ant-Man">
         </article>
     </section>
 </main>

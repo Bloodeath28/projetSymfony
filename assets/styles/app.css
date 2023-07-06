@@ -2,18 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     @apply m-0 p-0;
 }
+
+/* header */
 
 nav{
     @apply h-[60px] bg-[#59595950] flex justify-between items-center;
 }
 .btn{
-    @apply inline-flex justify-center items-center w-[125px] h-[30px];
+    @apply inline-flex justify-center items-center md:w-[125px] md:h-[30px];
     @apply my-0 mx-[2vw] bg-[#e01c1cce] rounded-[10px];
     box-shadow: 5px 5px 10px rgb(49, 47, 47);
-    @apply uppercase font-bold;
+    @apply uppercase tracking-widest;
     @apply hover:bg-[#e01c1c79] active:bg-[#391ce079];
 }
 
@@ -32,7 +35,7 @@ nav a {
 #utilisateurConnecter {
     @apply hidden;
 }
-
+/* Footer */
 #footerMarvel {
     @apply flex flex-row h-[80px] justify-between bg-[#59595950];
     @apply rounded-t-lg items-center;
@@ -49,7 +52,7 @@ nav a {
 #texteFooter {
     @apply my-[30px];
 }
-
+/* page d'accueil */
 #presentationSite, #blockMieuxNote {
     @apply m-[30px] p-[20px] w-[49vw] rounded-[20px];
     @apply bg-[#59595950] text-center
@@ -101,7 +104,7 @@ nav a {
 #marvelHero {
     @apply w-[45vw];
 }
-
+/* page d'inscription */
 #captainMarvel {
     @apply hidden;
 }
@@ -138,7 +141,95 @@ table {
 
 #btnInscrire {
     @apply border-none m-[10px] w-[150px] h-[40px] rounded-[20px] uppercase font-[20px] text-white bg-[#5E5BFF];
-    @apply  font-[20px] text-white bg-[#5E5BFF];
+    @apply  font-[20px] text-white bg-[#5E5BFF] tracking-widest;
     box-shadow: 5px 5px 10px rgb(49, 47, 47);
-    @apply pointer-events-auto font-extrabold hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
+    @apply cursor-pointer font-extrabold hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
+}
+/* page de connexion */
+#antMan {
+    @apply hidden;
+}
+
+#pageConnexion {
+    @apply flex flex-row justify-between;
+}
+
+#blockConnexion {
+    @apply my-[30px] rounded-[20px] bg-[#59595950] w-[30vw] z-10;
+}
+
+#titreConnexion {
+    @apply my-[40px] mx-auto py-[10px] text-center bg-[#E6E6E6];
+    @apply rounded-[10px] text-[#e01c1cce] font-extrabold w-[300px;]
+}
+
+#tableConnexion {
+    @apply my-[100px] mx-auto w-[350px] h-[450px];
+}
+
+#checkBox, #boxBtnConnexion {
+    @apply text-center;
+}
+
+#btnConnect {
+    @apply border-none m-[10px] w-[150px] h-[40px] rounded-[20px];
+    @apply uppercase text-[20px] text-white tracking-widest;
+    @apply  bg-[#5E5BFF] cursor-pointer hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+}
+
+/* page des livre */
+
+.ligne, .blockPresentation {
+    @apply flex justify-between;
+}
+
+.ligne {
+    @apply my-[20px];
+}
+
+.blockPresentation {
+    @apply w-[595px] h-[330px] mx-[20px] bg-[#D9D9D9];
+    @apply rounded-[20px] items-center;
+}
+
+.couverture{
+    @apply w-[196] h-[243px];
+}
+
+.blockVote, .couverture {
+    @apply ml-[40px];
+}
+
+.vote {
+    @apply w-[33px];
+}
+
+.titreBook {
+    @apply rounded-[10px] w-[251px] h-[38px] mr-[40px] mb-[20px];
+    @apply bg-[#F0F0F0] text-center text-[#D94343] font-bold;
+}
+
+.texteBook {
+    @apply w-[251px] h-[178px] rounded-[10px] items-center bg-[#F0F0F0];
+}
+
+.BtnEnvoyer {
+    @apply w-[69px] h-[21px] mt-[10px] bg-[#5E5BFF] rounded-[15px] text-white;
+    @apply cursor-pointer hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+}
+
+/* page de profil */
+
+#pageProfil {
+    @apply flex;
+}
+
+#blocDeProfil {
+    @apply flex flex-col m-[30px] bg-[#e01c1cce] rounded-[20px] w-[600px];
+}
+
+#cadrePerso {
+    @apply flex my-[15px] mx-auto rounded-[10px] w-[450px] h-[250px] bg-[#b8b6b6];
 }

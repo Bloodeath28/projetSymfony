@@ -7,9 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Marvel: ['"Marvel-Regular"', 'sans-serif'],
+        marvel: ['Marvel-Regular', 'sans-serif'],
     },
   },
+},
   plugins: [],
 }
-}
+

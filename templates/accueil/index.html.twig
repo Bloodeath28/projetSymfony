@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheetsCSS %}
-    <link rel="stylesheet" href="{{ asset('Css/Style.css')}}">
+    <link rel="stylesheet" href="{{ asset('build/font.css') }}">
 {% endblock %}
 
 {% block stylesheets %}
@@ -19,7 +19,7 @@
     <section id="pageAccueil">
         <article>
             <article id="presentationSite">
-                <h1 id="titrePrincipal" class="titreDeBlock">MARVEL BOOK</h1>
+                <h1 id="titrePrincipal" class="titreDeBlock marvel-font">MARVEL BOOK</h1>
                 <div id="imageTexte">
                     <img id="imgPresentation" src="{{ asset('Asset/Img/Books-Marvel.webp')}}" alt="">
                     <div id="lesTexte">
@@ -48,17 +48,17 @@
                         <p>Note</p>
                     </div>
                     <div class="blockLivre">
-                        <img class="imageLivre" src="{{asset('Asset/Img/Spider-man encyclopedie.jpg')}}" alt="Livre Spider-man encyclopedia">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Spider-man-encyclopedie.webp')}}" alt="Livre Spider-man encyclopedia">
                         <p>Note</p>
                     </div>
                     <div class="blockLivre">
-                        <img class="imageLivre" src="{{asset('Asset/Img/Hulk book.jpg')}}" alt="Livre Hulk book">
+                        <img class="imageLivre" src="{{asset('Asset/Img/Hulk-book.webp')}}" alt="Livre Hulk book">
                         <p>Note</p>
                     </div>
                 </div>
             </article>
         </article>
-        <img id="marvelHero" src="{{asset('Asset/Img/Marvel-Hero.png')}}" alt="les heros de Marvel">
+        <img id="marvelHero" src="{{asset('Asset/Img/Marvel-Hero.webp')}}" alt="les heros de Marvel">
     </section>
 </main>
 {% endblock %}
