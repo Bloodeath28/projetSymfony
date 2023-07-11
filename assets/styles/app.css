@@ -233,3 +233,60 @@ table {
 #cadrePerso {
     @apply flex my-[15px] mx-auto rounded-[10px] w-[450px] h-[250px] bg-[#b8b6b6];
 }
+
+#photoProfil {
+    @apply mt-[10px] mx-[10px] mb-[5px] w-[200px] bg-[#E6E6E6] rounded-[10px];
+}
+
+#btnChangerPhoto {
+    @apply border-none bg-[#5E5BFF] text-white text-[14px] ml-[55px] px-2 rounded-[10px] h-[20px];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+    @apply hover:bg-[#5e5bff98] active:bg-[#e01c1c79];
+}
+
+#pseudoGenreDate {
+    @apply p-0 mx-auto mt-3 h-[200px];
+}
+
+#pseudo {
+    @apply text-[16px] w-[200px] h-[25px] rounded-[5px];
+    @apply border-dotted border-[2px] border-[#e01c1cce];
+}
+
+#date, #sexe {
+    @apply text-[16px] w-[200px] h-[25px];
+}
+
+#enregitrerCadrePerso {
+    @apply border-none my-[25px] mx-[40px] w-[100px] h-[25px] bg-[#5E5BFF];
+    @apply hover:bg-[#5e5bff98] active:bg-[#e01c1c79] text-white rounded-[10px];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+}
+
+#cadreDeDescription {
+    @apply bg-[#b8b6b6] w-[550px] h-[500px] rounded-[10px] mt-0 mx-auto mb-[15px];
+}
+
+#tableauDescription {
+    @apply my-[7px] mx-auto w-[500px];
+}
+
+.champRemplissage {
+    @apply w-[275px] h-[30px] rounded-[10px];
+    @apply border-[2px] border-dotted border-[#e01c1cce];
+}
+
+#champDeDescription {
+    @apply w-[450px] h-[200px] rounded-[10px] text-[16px];
+    @apply border-[2px] border-dotted border-[#e01c1cce];
+}
+
+#enregitrerDescription {
+    @apply border-none mx-[220px] w-[100px] h-[25px] bg-[#5E5BFF];
+    @apply  text-white text-[16px] rounded-[10px];
+    box-shadow: 5px 5px 10px rgb(49, 47, 47);
+}
+
+#marvelUniverse {
+    @apply w-[68vw];
+}

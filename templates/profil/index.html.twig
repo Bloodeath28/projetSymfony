@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheetsCSS %}
-<link rel="stylesheet" href="{{ asset('Css/Profil.css')}}">
 {% endblock %}
 
 {% block main %}
@@ -9,30 +8,30 @@
     <section id="blocDeProfil">
         <article id="cadrePerso">
             <div>
-                <img id="photoProfil" src="../Asset/Img/Avatar-defaut.webp" alt="Photo de profil">
+                <img id="photoProfil" src="{{ asset('Asset/Img/Avatar-defaut.webp')}}" alt="Photo de profil">
                 <input id="btnChangerPhoto" type="submit" value="Changer photo">
             </div>
             <div id="pseudoGenreDate">
                 <form method="post" action="adresse de destination">
-                    <table>
+                    <table class="h-full p-0 my-1">
                         <tr>
                             <td>
-                                <label for="pseudo">Pseudo</label>
+                                <label for="pseudoProfil">Pseudo</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input id="pseudo" type="text" name="pseudo" placeholder="Pseudo">
+                                <input id="pseudoProfil" type="text" name="pseudo" placeholder="Pseudo">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="Sexe">Sexe</label>
+                                <label for="sexe">Sexe</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select name="Sexe" id="genre">
+                                <select name="Sexe" id="sexe">
                                     <option value="">Selectionez votre sexe
                                     <optgroup label="Genre"></optgroup>
                                     <option value="Homme">Homme</option>
@@ -48,7 +47,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input id="date" type="date" name="date">
+                                <input id="date" type="date" name="date" values="#">
                             </td>
                         </tr>
                     </table>
@@ -104,6 +103,6 @@
             </form>
         </article>
     </section>
-    <img id="marvelUniverse" src="../Asset/Img/Les personnages marvel.png" alt="Marvel Universe">
+    <img id="marvelUniverse" src="{{ asset('Asset/Img/Les-personnages-marvel.webp')}}" alt="Marvel Universe">
 </main>
 {% endblock %}
